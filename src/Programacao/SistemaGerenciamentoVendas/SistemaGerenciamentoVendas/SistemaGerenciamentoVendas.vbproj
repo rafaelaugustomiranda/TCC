@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75740CC3-BF5D-4FED-8728-F75937010925}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaGerenciamentoVendas.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaGerenciamentoVendas</RootNamespace>
+    <AssemblyName>SistemaGerenciamentoVendas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ManifestCertificateThumbprint>3BADB584940F8338D053565AB9989FC7A7DC05CE</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SistemaGerenciamentoVendas_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\TEMP\a\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaGerenciamentoVendas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaGerenciamentoVendas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Interactivity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormConsultas\frmConsulta.Designer.vb">
+      <DependentUpon>frmConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outros\ApplicationEvents.vb" />
+    <Compile Include="FormCadastros\frmCadUsuario.Designer.vb">
+      <DependentUpon>frmCadUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultas\frmContasReceber.Designer.vb">
+      <DependentUpon>frmContasReceber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmContasReceber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultas\frmHistoricoCompra.Designer.vb">
+      <DependentUpon>frmHistoricoCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmHistoricoCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultas\frmHistoricoVendas.Designer.vb">
+      <DependentUpon>frmHistoricoVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmHistoricoVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelEstoque.Designer.vb">
+      <DependentUpon>frmRelEstoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelEstoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelHistoricoCompra.Designer.vb">
+      <DependentUpon>frmRelHistoricoCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelHistoricoCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelHistoricoVenda.Designer.vb">
+      <DependentUpon>frmRelHistoricoVenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelHistoricoVenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelPagamentoVendas.Designer.vb">
+      <DependentUpon>frmRelPagamentoVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelPagamentoVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelVendas.Designer.vb">
+      <DependentUpon>frmRelVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelatorios.Designer.vb">
+      <DependentUpon>frmRelatorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Outros\BancoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadFormaPagamento.Designer.vb">
+      <DependentUpon>frmCadFormaPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadFormaPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadItemEstoque.Designer.vb">
+      <DependentUpon>frmCadItemEstoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadItemEstoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadTipoPagamento.Designer.vb">
+      <DependentUpon>frmCadTipoPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadTipoPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultas\frmConCliente.Designer.vb">
+      <DependentUpon>frmConCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmConCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultas\frmConEstoque.Designer.vb">
+      <DependentUpon>frmConEstoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmConEstoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultas\frmHistoricoVendaCliente.Designer.vb">
+      <DependentUpon>frmHistoricoVendaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultas\frmHistoricoVendaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimentacao\frmPagamentoVendas.Designer.vb">
+      <DependentUpon>frmPagamentoVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimentacao\frmPagamentoVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelClientes.Designer.vb">
+      <DependentUpon>frmRelClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorios\frmRelClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSobre.Designer.vb">
+      <DependentUpon>frmSobre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSobre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo\Soma.vb" />
+    <Compile Include="FormCadastros\frmCadCidade.Designer.vb">
+      <DependentUpon>frmCadCidade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadCidade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadCliente.Designer.vb">
+      <DependentUpon>frmCadCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadGrupo.Designer.vb">
+      <DependentUpon>frmCadGrupo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadGrupo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadVendedores.Designer.vb">
+      <DependentUpon>frmCadVendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastros\frmCadVendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimentacao\frmItensVendas.Designer.vb">
+      <DependentUpon>frmItensVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimentacao\frmItensVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimentacao\frmVendas.Designer.vb">
+      <DependentUpon>frmVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimentacao\frmVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo\modulo.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Outros\BancoDataSet.vb">
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\relClientes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relClientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\relEstoqueMinimo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relEstoqueMinimo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\relGraHistoricoCompra.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relGraHistoricoCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\relGraHistoricoVenda.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relGraHistoricoVenda.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\relGraPagamentoVendas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relGraPagamentoVendas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\relItensVendas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relItensVendas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\relVendas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relVendas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCadastros\frmCadCidade.resx">
+      <DependentUpon>frmCadCidade.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadCliente.resx">
+      <DependentUpon>frmCadCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadFormaPagamento.resx">
+      <DependentUpon>frmCadFormaPagamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadGrupo.resx">
+      <DependentUpon>frmCadGrupo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadTipoPagamento.resx">
+      <DependentUpon>frmCadTipoPagamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadUsuario.resx">
+      <DependentUpon>frmCadUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadVendedores.resx">
+      <DependentUpon>frmCadVendedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastros\frmCadItemEstoque.resx">
+      <DependentUpon>frmCadItemEstoque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmConCliente.resx">
+      <DependentUpon>frmConCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmConEstoque.resx">
+      <DependentUpon>frmConEstoque.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmContasReceber.resx">
+      <DependentUpon>frmContasReceber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmHistoricoCompra.resx">
+      <DependentUpon>frmHistoricoCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmHistoricoVendaCliente.resx">
+      <DependentUpon>frmHistoricoVendaCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmHistoricoVendas.resx">
+      <DependentUpon>frmHistoricoVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimentacao\frmItensVendas.resx">
+      <DependentUpon>frmItensVendas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimentacao\frmPagamentoVendas.resx">
+      <DependentUpon>frmPagamentoVendas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimentacao\frmVendas.resx">
+      <DependentUpon>frmVendas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelClientes.resx">
+      <DependentUpon>frmRelClientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelEstoque.resx">
+      <DependentUpon>frmRelEstoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelHistoricoCompra.resx">
+      <DependentUpon>frmRelHistoricoCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelHistoricoVenda.resx">
+      <DependentUpon>frmRelHistoricoVenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelPagamentoVendas.resx">
+      <DependentUpon>frmRelPagamentoVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelVendas.resx">
+      <DependentUpon>frmRelVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultas\frmConsulta.resx">
+      <DependentUpon>frmConsulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorios\frmRelatorios.resx">
+      <DependentUpon>frmRelatorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSobre.resx">
+      <DependentUpon>frmSobre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relClientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relClientes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relEstoqueMinimo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relEstoqueMinimo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relGraHistoricoCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relGraHistoricoCompra.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relGraHistoricoVenda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relGraHistoricoVenda.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relGraPagamentoVendas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relGraPagamentoVendas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relItensVendas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relItensVendas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\relVendas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relVendas.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Outros\BancoDataSet.xsc">
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Outros\BancoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Outros\BancoDataSet.xss">
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Outros\app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SistemaGerenciamentoVendas_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\mRibbon\mRibbon.csproj">
+      <Project>{1B29AC63-B032-4710-A7C8-B4C6C69D331B}</Project>
+      <Name>mRibbon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
